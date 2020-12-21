@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Math game.</title>
+        <title>Йэгэ по арифметике на скорость.</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="game">
-            <h3 id="time">Осталось времени: 100</h3>
+        <div class="game" id = "game">
+            <h3 id="time">Осталось времени: 100. Очки: 0.</h3>
             <h4 id="q">Сколько будет 1+44</h4>
             <div class="btns">
-                <a href="#" id="1"><b>1</b></a>
-                <a href="#" id="2"><b>2</b></a>
-                <a href="#" id="3"><b>3</b></a>
-                <a href="#" id="4"><b>4</b></a>
+                <b><a href="#" id="1" onclick="next(1)">1</a></b>
+                <b><a href="#" id="2" onclick="next(2)">2</a></b>
+                <b><a href="#" id="3" onclick="next(3)">3</a></b>
+                <b><a href="#" id="4" onclick="next(4)">4</a></b>
             </div>
             
+        </div>
+        <div id="final">
+            <h3 id="score">Вы проиграли! Ваши очки: 0.</h3>
+            <div class="btns">
+                <b><a href="#" onclick="restart()">&#8635;</a></b>
+                
+            </div>
         </div>
         <script src="script.js"></script>
     </body>

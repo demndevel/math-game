@@ -53,3 +53,31 @@
     
     
 }
+#final {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #00b2b2;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#final h3 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    
+}
+#final a {
+    text-align: center;
+    background-color:#ff8100;
+    border-radius: 5px;
+    text-decoration:none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+#final .btns {
+    margin-left: 55%;
+}
