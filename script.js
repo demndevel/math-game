@@ -21,7 +21,7 @@ game = document.getElementById("game")
 function time() {
     timeLeft-=1;
     document.getElementById("time").innerHTML = "Осталось времени: "+timeLeft+"."+"Очки: "+score+".";
-    if(time <1){
+    if(timeLeft <1){
         fail();
     }
 }
@@ -52,7 +52,6 @@ function start() {
     
     result = eval(a+strOperation+b);
     document.getElementById("q").innerHTML = 'Сколько будет: '+a+strOperation+b+"?";
-    console.log(result);
     if(rWillBe ===1){
         document.getElementById("1").innerHTML = eval(a+strOperation+b);
         
@@ -90,7 +89,6 @@ function rnd(x){
     return Math.floor(Math.random()*Math.floor(x));
 }
 function next(num) {
-    console.log(result);
     rResult = document.getElementById(num+'').innerHTML;
     if(rResult == result){
         score+=1;
